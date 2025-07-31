@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuentra tu Pareja - Lovely</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Lovely">
+                <h1>Lovely</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Inicio</a></li>
+                <li><a href="#how-it-works">Cómo funciona</a></li>
+                <li><a href="#testimonials">Testimonios</a></li>
+                <li><a href="pages/login.html" class="btn-login">Iniciar Sesión</a></li>
+                <li><a href="pages/register.html" class="btn-register">Registrarse</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Encuentra tu pareja ideal</h2>
+                <p>Conecta con personas que comparten tus intereses y valores</p>
+                <a href="pages/register.html" class="btn-primary">Crear cuenta gratis</a>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <h2>¿Cómo funciona Lovely?</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <h3>Crea tu perfil</h3>
+                    <p>Completa tu perfil con tus intereses y lo que buscas en una pareja.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <h3>Encuentra matches</h3>
+                    <p>Nuestro algoritmo te mostrará personas compatibles contigo.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <h3>Conecta</h3>
+                    <p>Envía mensajes y conoce a tus matches en persona.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>Historias de éxito</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <img src="assets/images/juntos1.jpg" alt="Usuario">
+                    <p>"Conocí a mi pareja en Lovely después de 3 meses. ¡Ahora llevamos 2 años juntos!"</p>
+                    <span>- María y Carlos</span>
+                </div>
+                <div class="testimonial-card">
+                    <img src="assets/images/maria.jpg" alt="Usuario">
+                    <p>"Me encanta cómo la app conecta personas con intereses similares. ¡Totalmente recomendada!"</p>
+                    <span>- Laura</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="mi-estilo">
+            
+                <h3>¡Atención!</h3>
+                <p> ¡Solteros y solteras!: si buscas el amor, quieres salir con gente nueva o solo tener algo casual, tienes que estar en Tinder. Con más de 55 mil millones de matches, es el lugar perfecto para conocer a la persona ideal para ti. La verdad es que hoy en día las relaciones son muy diferentes, ya que la mayoría de las personas se conoce por Internet. Con Tinder, la app de citas más popular del mundo, tienes en la palma de tu mano a millones de personas solteras con muchas ganas de conocer a alguien como tú. No importa si eres heterosexual o parte de la comunidad LGBTQIA, en Tinder encontrarás a alguien con quien hacer química.
+
+En Tinder sí que hay algo para todo el mundo. ¿Quieres empezar una relación formal? Hecho. ¿Quieres amistades nuevas? Con eso basta. ¿Llegaste a la universidad y quieres tener la mejor experiencia posible? Tinder U es para ti. Tinder no es un sitio de citas como cualquiera, es la app de citas más diversa que existe, donde personas con vivencias y experiencias de todo tipo son bienvenidas para formar conexiones, recuerdos y mucho más.</p>
+            </div>
+            <div class="footer-bottom"></div>
+            <div class="footer-section">
+             <div class="footer-content">
+            <div class="footer-section">
+                <h3>Lovely</h3>
+                <p>Encuentra tu pareja ideal con nuestro sistema de matching avanzado.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#how-it-works">Cómo funciona</a></li>
+                    <li><a href="#testimonials">Testimonios</a></li>
+                    <li><a href="pages/login.html">Iniciar Sesión</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Lovely. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+
+    <!-- Botón para abrir el modal -->
+  <button class="open-modal-btn" onclick="openModal()">Personalizar mis preferencias</button>
+
+  <!-- Modal -->
+  <div class="modal-background" id="preferencesModal">
+    <div class="modal-content">
+      <button class="close-button" onclick="closeModal()">×</button>
+      <h2>Personaliza tus preferencias</h2>
+      <p>Selecciona cómo te gustaría que personalicemos tu experiencia en la página.</p>
+      <!-- Aquí puedes agregar opciones de configuración reales -->
+      <button onclick="alert('Preferencias guardadas')">Guardar preferencias</button>
+    </div>
+  </div>
+
+  <script>
+    function openModal() {
+      document.getElementById('preferencesModal').style.display = 'block';
+    }
+
+    function closeModal() {
+      document.getElementById('preferencesModal').style.display = 'none';
+    }
+  </script>
+
+</div>
+
+<form id="miFormulario">
+  <input type="text" id="nombre">
+  <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>
